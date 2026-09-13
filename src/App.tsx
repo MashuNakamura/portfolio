@@ -215,7 +215,7 @@ const About = () => {
 const Experience = () => {
   const experiences = [
     {
-      date: 'Feb - Aug 2026',
+      date: 'Mar 2026 - Aug 2026',
       role: 'Web Programming Intern',
       company: 'Flashcom',
       desc: 'Developed and maintained scalable software solutions. Collaborated with cross-functional teams to design and implement new features, improving overall system performance and user experience.'
