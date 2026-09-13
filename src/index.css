@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Outfit", sans-serif;
+
+  --color-brand-500: #38bdf8;
+  --color-brand-600: #0284c7;
+  --color-accent-500: #818cf8;
+
+  --animate-float: float 10s ease-in-out infinite alternate;
+  --animate-float-reverse: float-reverse 15s ease-in-out infinite alternate;
+  --animate-blink: blink 1s step-end infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes float-reverse {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50px, -50px);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-slate-800/70 backdrop-blur-xl border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/30;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-sky-400 to-indigo-400 bg-clip-text text-transparent;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+}
