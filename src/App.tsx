@@ -464,7 +464,8 @@ const Certifications = () => {
       issuer: 'freeCodeCamp',
       date: 'Issued Nov 2023',
       credentialId: 'fcc5a74d0d6-29be-4079-8614-eea6221754e4-rwd',
-      image: 'freecodecamp-web-design.png'
+      image: 'freecodecamp-web-design.png',
+      url: 'https://freecodecamp.org/certification/fcc5a74d0d6-29be-4079-8614-eea6221754e4/responsive-web-design'
     },
     {
       title: 'SQL (Basic)',
